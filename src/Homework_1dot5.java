@@ -1,68 +1,98 @@
 public class Homework_1dot5
 {
-    public static void main(String[] args) {
-        {
-            Task_2.Print();
-            Task_3.Print();
-//            Task_4.Print();
-        }
+    public static void main(String[] args)
+    {
+        Task2.print();
+        Task3.print();
+        Task4.print();
     }
-    public class Task_1
+    public class Task1
     {
         int[] array = new int[]{1,2,3};
         float[] floatArray = {-1.57f, 7.654f, 9.986f };
         boolean[] bools = {false,true};
     }
-    public class Task_2
+    public class Task2
     {
         static int[] array = new int[]{1,2,3};
         static float[] floatArray = {-1.57f, 7.654f, 9.986f };
         static boolean[] bools = {false,true};
-        public static void Print()
+        public static void print()
         {
             for (int i = 0; i <array.length; i++)
-                System.out.print(array[i] + ",");
-
+            {
+                if (i == array.length-1)
+                    System.out.print(array[i]);
+                else
+                    System.out.print(array[i] + ",");
+            }
             System.out.println();
-            for (int i = 0; i <floatArray.length; i++)
-                System.out.print(floatArray[i] + ",");
 
+            for (int i = 0; i <floatArray.length; i++)
+            {
+                if (i == floatArray.length - 1)
+                    System.out.print(floatArray[i]);
+                else
+                    System.out.print(floatArray[i] + ",");
+            }
             System.out.println();
             for (int i = 0; i <bools.length; i++)
-                System.out.print(bools[i] + ",");
+            {
+                if (i == bools.length - 1)
+                    System.out.print(bools[i]);
+                else
+                    System.out.print(bools[i] + ",");
+            }
+            System.out.println();
         }
     }
-    public class Task_3
+    public class Task3
     {
         static int[] array = new int[]{1,2,3};
         static float[] floatArray = {-1.57f, 7.654f, 9.986f };
         static boolean[] bools = {false,true};
-        public static void Print()
+        public static void print()
         {
             for (int i = array.length -1; i >= 0; i--)
-                System.out.print(array[i] + ",");
+            {
+                if (i == 0)
+                    System.out.print(array[i]);
+                else
+                    System.out.print(array[i] + ",");
+            }
 
             System.out.println();
             for (int i = floatArray.length -1; i >= 0; i--)
-                System.out.print(floatArray[i] + ",");
+            {
+                if (i == 0)
+                    System.out.print(floatArray[i]);
+                else
+                    System.out.print(floatArray[i] + ",");
+            }
 
             System.out.println();
             for (int i = bools.length -1; i >= 0; i--)
-                System.out.print(bools[i] + ",");
+            {
+                if (i == 0)
+                    System.out.print(bools[i]);
+                else
+                    System.out.print(bools[i] + ",");
+            }
+            System.out.println();
         }
     }
-    public class Task_4
+    public class Task4
     {
         static int[] array = new int[]{1,2,3};
 
-        public static void Print()
+        public static void print()
         {
             for (int i = 0; i < array.length; i++)
             {
                 if (array[i] % 2 != 0)
                 {
-//                    System.out.print(array[i] + " odd ");
                     array[i] ++;
+                    System.out.println(array[i]);
                 }
             }
         }
