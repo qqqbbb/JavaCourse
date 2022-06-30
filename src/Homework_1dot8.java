@@ -4,7 +4,7 @@ public class Homework_1dot8
     {
         isLeapYear(1555);
         checkDevice(0, 2020);
-        calculateDeliveryDays(44);
+        calculateDeliveryDays(222);
     }
     //  task 1
     public static void isLeapYear(int year)
@@ -33,8 +33,8 @@ public class Homework_1dot8
 //  task 3
     public static void calculateDeliveryDays(int deliveryDistance)
     {
-        int deliveryDays = 0;
-        for (int i = 0; i < deliveryDistance; i += 20)
+        int deliveryDays = 1;
+        for (int i = 20; i < deliveryDistance; i += 40)
             deliveryDays++;
 
         System.out.println("Потребуется дней: " + deliveryDays);
