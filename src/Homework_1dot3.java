@@ -1,6 +1,6 @@
 public class Homework_1dot3 {
     public static void main(String[] args) {
-        Task_1.Print();
+        Task_1.Print(0, 2020);
         Task_2.Print();
         Task_3.IsLeapYear();
         Task_4.Print();
@@ -9,9 +9,8 @@ public class Homework_1dot3 {
 }
 
 class Task_1 {
-    static byte clientOS = 0;
 
-    public static void Print() {
+    public static void Print(int clientOS, int releaseYear) {
         if (clientOS == 0)
             System.out.println("Установите версию приложения для iOS по ссылке.");
         else if (clientOS == 1)
