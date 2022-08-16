@@ -1,13 +1,22 @@
 package Homework_2dot4;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
 public class Main
 {
     public static void main(String[] args)
     {
-        System.out.println("checkLogin " + checkLogin("qqq", "123", null));
+        System.out.println("checkLogin " + check("qqq", "123", null));
+        System.out.println(" power " + Math.pow(2,0.5));
+
+
     }
 
-    public static boolean checkLogin(String login, String password, String confirmPassword)
+
+    public static boolean check(String login, String password, String confirmPassword)
     {
         try
         {
@@ -27,6 +36,7 @@ public class Main
 
     public static void checkLogin(String login)
     {
+//        String.valueOf(arr).matches("^\\w*$")
         if (login == null || login.isEmpty() || login.length() > 20)
             throw new WrongLoginException();
 
