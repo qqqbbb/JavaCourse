@@ -11,7 +11,15 @@ public class Main
 //        printOddNumbers(list);
 //        printEvenNumbers(list);
 //        printUniqueWords(wordList);
-        printRepeatingWords(wordList);
+//        printRepeatingWords(wordList);
+
+//        List<Integer> nums = new ArrayList<Integer>();
+//        Iterator<Integer> iterator = list.iterator();
+//        while (iterator.hasNext())
+//        {
+//            if (iterator.next() == 2)
+//                iterator.remove();
+//        }
     }
 
     public static void printOddNumbers(ArrayList<Integer> list)
