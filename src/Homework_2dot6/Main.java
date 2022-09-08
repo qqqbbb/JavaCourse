@@ -1,6 +1,9 @@
 package Homework_2dot6;
 
 import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 public class Main
 {
@@ -8,6 +11,9 @@ public class Main
     {
         ArrayList<Integer> list = new ArrayList<Integer>(Arrays.asList(1, 6, 3, 5, 4, 2, 4));
         ArrayList<String> wordList = new ArrayList<String>(Arrays.asList("cat" , "dog", "cat", "duck"));
+
+
+
 //        printOddNumbers(list);
 //        printEvenNumbers(list);
 //        printUniqueWords(wordList);
